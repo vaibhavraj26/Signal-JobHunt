@@ -1,16 +1,87 @@
-# React + Vite
+# Signal
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Signal is a focused job discovery experience that filters the noise from a large search and surfaces opportunities that fit a candidate's skills, goals, location, and experience.
 
-Currently, two official plugins are available:
+The interface combines match intelligence, a lightweight application tracker, and a dashboard-style search experience in a responsive single-page application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Preview
 
-## React Compiler
+<table>
+  <tr>
+    <td><img src="assets/hero.png" alt="Signal dashboard hero" /></td>
+    <td><img src="assets/noicereduction.png" alt="Signal opportunity filtering section" /></td>
+  </tr>
+  <tr>
+    <td><img src="assets/matchintelligence.png" alt="Signal match intelligence section" /></td>
+    <td><img src="assets/applications.png" alt="Signal applications tracker" /></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="assets/cta_footer.png" alt="Signal call to action and footer" /></td>
+  </tr>
+</table>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- Dashboard-style job discovery with interactive opportunity selection
+- Match scoring with visible strengths and missing criteria
+- Application tracking across saved, applied, interview, and offer states
+- Responsive layouts for desktop and mobile screens
+- Motion-based reveals with reduced-motion support
+- Keyboard-triggered Signal pulse interaction
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Tech Stack
+
+- React 19
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Oxlint
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18 or newer
+- npm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+The development server will print the local URL in the terminal.
+
+### Production Build
+
+```bash
+npm run build
+```
+
+### Linting
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```text
+src/
+├── components/   Reusable page sections and interface components
+├── data/         Demo jobs, applications, and match criteria
+├── App.jsx       Application composition and global interaction state
+└── index.css     Global styles and Tailwind entry point
+assets/           README preview screenshots
+public/           Public static assets
+```
+
+## License
+
+This project is intended for demonstration and assignment purposes.
